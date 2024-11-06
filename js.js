@@ -188,12 +188,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let numbersBox = mainBox.children;
       for (let i = 1; i < numbersBox.length; i++) {
-        // if (numbersBox[i - 1].textContent != i) {
-        //   return false;
-        // }
-        if (numbersBox[0].textContent != 5) {
+        if (numbersBox[i - 1].textContent != i) {
           return false;
         }
+        // if (numbersBox[0].textContent != 5) {
+        //   return false;
+        // }
       }
       audio.play();
       if (options === "click") {

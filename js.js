@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop + emptyCell.offsetHeight + 8 === eventY) ||
+            emptyCell.offsetTop + emptyCell.offsetWidth + 8 === eventY) ||
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop - emptyCell.offsetHeight - 8 === eventY) ||
+            emptyCell.offsetTop - emptyCell.offsetWidth - 8 === eventY) ||
           (emptyCell.offsetTop === eventY &&
             emptyCell.offsetLeft + emptyCell.offsetWidth + 8 === eventX) ||
           (emptyCell.offsetTop === eventY &&

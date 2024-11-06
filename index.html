@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game15</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="interface-box">
+        <div class="result-modal is-hidden">
+          <button id="btnClose">
+            <img width="16" height="16" src="./image/dagger.svg" alt="" />
+          </button>
+          <p>Congratulations!!!</p>
+          <div class="icons">
+            <img src="./image/fireworks-3.png" alt="" />
+            <img src="./image/star2.png" alt="" />
+            <img src="./image/fireworks-3.png" alt="" />
+          </div>
+
+          <p id="resultGame">result</p>
+        </div>
+        <div class="top-panel">
+          <img id="refresh" src="./image/refresh-3338663.png" alt="" />
+          <div class="field">
+            <span>Size</span>
+            <select name="size" id="size">
+              <option value="9" selected>3x3</option>
+              <option value="16">4x4</option>
+              <option value="25">5x5</option>
+            </select>
+          </div>
+          <div class="time-or-click field">
+            <div>
+              <span>Click</span>
+              <input
+                type="radio"
+                class="radio"
+                checked
+                name="radio"
+                id="click"
+              />
+            </div>
+            <div>
+              <span>Time</span>
+              <input type="radio" class="radio" name="radio" id="time" />
+            </div>
+          </div>
+          <div class="field">
+            <span>Theme</span>
+            <select name="theme" id="theme">
+              <option value="blue" selected>blue</option>
+              <option value="brown">brown</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn" id="start">Start</button>
+        <div class="main-box"></div>
+        <div class="bottom-panel">
+          <div class="result-panel field">
+            <span>Clicks:</span>
+            <div id="resultC">0</div>
+          </div>
+          <img src="./image/diamond.png" />
+          <div class="field result-panel">
+            <span>Time:</span>
+            <div id="resultT">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>

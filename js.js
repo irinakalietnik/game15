@@ -116,9 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
           (emptyCell.offsetLeft === eventX &&
             emptyCell.offsetTop - emptyCell.offsetHeight - 8 === eventY) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft + emptyCell.offsetHeight + 8 === eventX) ||
+            emptyCell.offsetLeft + emptyCell.offsetWidth + 8 === eventX) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft - emptyCell.offsetHeight - 8 === eventX)
+            emptyCell.offsetLeft - emptyCell.offsetWidth - 8 === eventX)
         ) {
           emptyCell.textContent = event.target.textContent;
           event.target.classList = "hidden";

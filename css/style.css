@@ -5,7 +5,8 @@ body,
 p {
   margin: 0;
 }
-
+body {
+}
 :root {
   --main-dark: #356794;
   --main-light: #b1cafc;
@@ -187,7 +188,7 @@ option {
     padding: 10px 3px;
   }
   .interface-box {
-    width: 360px;
+    width: 100%;
     justify-content: space-between;
     height: 100%;
   }

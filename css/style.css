@@ -175,7 +175,7 @@ option {
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
-    height: 96vh;
+    height: 110%;
   }
   .bottom-panel {
     display: flex;
@@ -189,7 +189,7 @@ option {
   .interface-box {
     width: 360px;
     justify-content: space-between;
-    height: 100%;
+    gap: 40px;
   }
   .btn {
     font-size: 3vh;

@@ -175,7 +175,7 @@ option {
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
-    height: 100vh;
+    height: auto;
   }
   .bottom-panel {
     display: flex;

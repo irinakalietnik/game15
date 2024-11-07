@@ -6,20 +6,20 @@ p {
   margin: 0;
 }
 
-:root {
+/* :root {
   --main-dark: #356794;
   --main-light: #b1cafc;
   --border: #b4bacc;
   --container: #dee0c2;
-}
-/* 
+} */
+
 :root {
   --main-dark: #796c4a;
   --main-light: #fcd875;
   --border: #ac9d9d;
- 
+
   --container: #e7e1ad;
-} */
+}
 select {
   color: var(--main-dark);
   border-radius: 4px;

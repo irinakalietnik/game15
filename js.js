@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-  
+
   class RandomArr {
     constructor(numbOfCells) {
       this.numbOfCells = numbOfCells;
@@ -108,20 +108,21 @@ document.addEventListener("DOMContentLoaded", function () {
           clicks++;
           document.getElementById("resultC").textContent = clicks;
         }
-
+        let eventHeight = event.target.offsetHeight;
+        let eventWidth = event.target.offsetWidth;
         let emptyCell = document.getElementsByClassName("hidden")[0];
         let eventX = event.target.offsetLeft;
         let eventY = event.target.offsetTop;
 
         if (
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop + emptyCell.offsetHeight + 8 === eventY) ||
+            emptyCell.offsetTop + eventHeight + 8 === eventY) ||
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop - emptyCell.offsetHeight - 8 === eventY) ||
+            emptyCell.offsetTop - eventHeight - 8 === eventY) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft + emptyCell.offsetWidth + 8 === eventX) ||
+            emptyCell.offsetLeft + eventWidth + 8 === eventX) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft - emptyCell.offsetWidth - 8 === eventX)
+            emptyCell.offsetLeft - eventWidth - 8 === eventX)
         ) {
           emptyCell.textContent = event.target.textContent;
           event.target.classList = "hidden";

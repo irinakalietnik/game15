@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.style.setProperty("--container", "#dee0c2");
     }
   }
+
   class BrownTheme {
     setcolor() {
       document.documentElement.style.setProperty("--main-dark", "#796c4a");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.style.setProperty("--container", "#e7e1ad");
     }
   }
+
   class Theme {
     constructor() {
       this.blue = new BlueTheme();
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+  
   class RandomArr {
     constructor(numbOfCells) {
       this.numbOfCells = numbOfCells;
@@ -130,21 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
           event.target.textContent = 0;
         }
 
-        //let numbersBox = event.currentTarget.children;
-        // for (let i = 1; i < numbersBox.length; i++) {
-        //   // if (numbersBox[i - 1].textContent != i) {
-        //   //   return false;
-        //   // }
-        //   if (numbersBox[0].textContent != 5) {
-        //     return false;
-        //   }
-        // }
-        // resultGame.textContent = `Your result: ${resultClicks.textContent}`;
-        // resultModal.classList.remove("is-hidden");
         new EndGame().finishGame();
       });
     }
   }
+
   function chooseOptions() {
     let input = document.querySelectorAll("input");
     for (let i = 0; i < input.length; i++) {
@@ -153,19 +146,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-  // chooseOptions();
+
   class SettingTheme {
     constructor() {
       this.theme = new Theme();
       this.select = document.getElementById("theme");
     }
-    // settingTimeOrClick() {
-    //   for (let i = 0; i < this.input.length; i++) {
-    //     if (this.input[i].checked == true) {
-    //       return this.input[i].id;
-    //     }
-    //   }
-    // }
 
     chooseTheme() {
       let option = this.select.children;
@@ -281,33 +267,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainBox = document.getElementsByClassName("main-box")[0];
   const btnStart = document.getElementById("start");
   const bottomPanel = document.getElementsByClassName("bottom-panel")[0];
+
   const audio = new Audio();
 
-  // function endGame() {
-  //   audio.preload = "auto";
-  //   audio.src = "./audio/a2.mp3";
-  //   audio.play();
-
-  //   let numbersBox = mainBox.children;
-  //   for (let i = 1; i < numbersBox.length; i++) {
-  //     // if (numbersBox[i - 1].textContent != i) {
-  //     //   return false;
-  //     // }
-  //     if (numbersBox[0].textContent != 5) {
-  //       return false;
-  //     }
-  //   }
-
-  //   resultGame.textContent = `Your result: ${resultClicks.textContent}`;
-  //   resultModal.classList.remove("is-hidden");
-  //   btnClose.onclick = function () {
-  //     resultModal.classList.add("is-hidden");
-  //   };
-  // }
-  // endGame();
-
   const settingTheme = new SettingTheme();
+
   const boxNambers = new BoxCells();
+
   boxNambers.createElem(Number(size.value));
 
   btnStart.addEventListener("click", startGame);
@@ -328,6 +294,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("refresh").onclick = function () {
     btnStart.style.backgroundColor = "#b4bacc";
+    resultTime.textContent = 0;
+    resultClicks.textContent = 0;
+    stopFunc = false;
+    stopInterval();
     boxNambers.createElem(Number(size.value));
   };
 

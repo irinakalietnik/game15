@@ -130,6 +130,7 @@ option {
 }
 .result-panel {
   display: flex;
+  align-items: center;
   font-size: 2vh;
   justify-content: space-between;
   width: 20vh;
@@ -173,8 +174,9 @@ option {
 
 @media (max-width: 560px) {
   .container {
+    min-height: fit-content;
     min-width: 360px;
-    padding: 20px 0;
+    padding: 0;
   }
   .bottom-panel {
     display: flex;

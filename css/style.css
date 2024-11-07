@@ -65,6 +65,8 @@ img {
   /* grid-template-rows: repeat(4, 1fr); */
 }
 .numb-box {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,11 +174,7 @@ option {
 @media (max-width: 560px) {
   .container {
     min-width: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-    height: 100%;
+    padding: 20px 0;
   }
   .bottom-panel {
     display: flex;

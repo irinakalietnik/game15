@@ -27,6 +27,7 @@ select {
 }
 
 .container {
+  min-height: 100vh;
   background-color: var(--container);
   max-width: 1200px;
   min-width: 460px;
@@ -188,7 +189,7 @@ option {
   }
   .interface-box {
     width: 360px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 100%;
   }
   .btn {
@@ -208,5 +209,8 @@ option {
   .field {
     padding: 12px 4px;
     margin: 5px 10px;
+  }
+  .numb-box {
+    font-size: 28px;
   }
 }

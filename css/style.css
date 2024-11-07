@@ -43,7 +43,7 @@ select {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
 img {
@@ -77,8 +77,6 @@ img {
 }
 .hidden {
   opacity: 0;
-  /* visibility: hidden; */
-  /* pointer-events: none; */
 }
 .top-panel {
   align-items: center;
@@ -187,13 +185,10 @@ option {
     border-radius: 6px;
     padding: 10px 3px;
   }
-  .main-box{
-    height: auto;
-  }
+
   .interface-box {
     width: 360px;
     /* justify-content: space-between; */
-    height: 100%;
   }
   .btn {
     font-size: 3vh;
@@ -215,5 +210,10 @@ option {
   }
   .numb-box {
     font-size: 28px;
+  }
+  .main-box {
+    height: 300px;
+    width: 300px;
+    padding: 2px;
   }
 }

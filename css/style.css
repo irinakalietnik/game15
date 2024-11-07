@@ -188,7 +188,8 @@ option {
 
   .interface-box {
     width: 360px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    height: 100%;
   }
   .btn {
     font-size: 3vh;
@@ -212,8 +213,6 @@ option {
     font-size: 28px;
   }
   .main-box {
-    height: 300px;
-    width: 300px;
-    padding: 2px;
+    width: 100%;
   }
 }

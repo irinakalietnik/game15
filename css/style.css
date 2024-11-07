@@ -187,6 +187,9 @@ option {
     border-radius: 6px;
     padding: 10px 3px;
   }
+  .main-box{
+    height: auto;
+  }
   .interface-box {
     width: 360px;
     /* justify-content: space-between; */

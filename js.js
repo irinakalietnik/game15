@@ -85,10 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let i = 0; i < numbOfCells; i++) {
         this.elements[i] = document.createElement("div");
         this.elements[i].textContent = numb[i];
+        
+        
         if (numb[i] === 0) {
           this.elements[i].classList.add("hidden");
         } else {
           this.elements[i].classList.add("numb-box");
+          
         }
 
         fragment.appendChild(this.elements[i]);

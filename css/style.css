@@ -43,7 +43,7 @@ select {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 img {
@@ -188,6 +188,8 @@ option {
 
   .interface-box {
     width: 360px;
+    justify-content: space-between;
+    height: 100%;
   }
   .btn {
     font-size: 3vh;

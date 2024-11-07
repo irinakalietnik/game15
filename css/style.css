@@ -188,8 +188,6 @@ option {
 
   .interface-box {
     width: 360px;
-    justify-content: space-between;
-    height: 100%;
   }
   .btn {
     font-size: 3vh;

@@ -118,13 +118,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop + eventHeight + 8 == eventY) ||
+            emptyCell.offsetTop + eventHeight + 8 === eventY) ||
           (emptyCell.offsetLeft === eventX &&
-            emptyCell.offsetTop - eventHeight - 8 == eventY) ||
+            emptyCell.offsetTop - eventHeight - 8 === eventY) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft + eventWidth + 8 == eventX) ||
+            emptyCell.offsetLeft + eventWidth + 8 === eventX) ||
           (emptyCell.offsetTop === eventY &&
-            emptyCell.offsetLeft - eventWidth - 8 == eventX)
+            emptyCell.offsetLeft - eventWidth - 8 === eventX)
         ) {
           emptyCell.textContent = event.target.textContent;
           event.target.classList = "hidden";

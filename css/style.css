@@ -32,7 +32,7 @@ select {
   min-width: 460px;
   width: 100%;
   padding: 30px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 7vh;
+  font-size: 36px;
   background-color: var(--main-dark);
   border-radius: 6px;
   color: var(--container);
@@ -159,7 +159,7 @@ option {
   border: none;
   transform: scale(1.5);
 }
-#btnClose:hover {
+#btnClose img:hover {
   transform: scale(1.5);
 }
 .is-hidden {
@@ -175,7 +175,7 @@ option {
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
-    height: 110%;
+    height: 100%;
   }
   .bottom-panel {
     display: flex;
@@ -189,7 +189,7 @@ option {
   .interface-box {
     width: 360px;
     justify-content: space-between;
-    gap: 40px;
+    height: 100%;
   }
   .btn {
     font-size: 3vh;
